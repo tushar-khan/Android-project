@@ -5,24 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorAccent">
+    >
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#007399"
+        android:gravity="center"
+        android:orientation="vertical"
+      >
 
-        android:textAlignment="center"
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="30dp"
 
-        >
+            android:layout_height="wrap_content"
+            android:textSize="25dp" />
 
-    </ListView>
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="79dp" />
+        <Button
+            android:id="@+id/getinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Getinfo" />
+
+    </LinearLayout>
+
+
+
+
 </android.support.constraint.ConstraintLayout>
